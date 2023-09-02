@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "doctopdf/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "doctopdf/wsgi.py"
+      }
+    ]
+}
